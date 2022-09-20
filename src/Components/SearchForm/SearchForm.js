@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchForm = () => {
   return (
-    <form></form>
+    <form>THIS IS MY FORM</form>
   );
 };
 

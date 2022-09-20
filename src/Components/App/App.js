@@ -7,11 +7,18 @@ import Footer from "../Footer/Footer";
 
 const App = () => {
   const [data, setData] = useState([]);
+  const [error, setError] = useState("");
 
   // On page load, see Top News Stories
   useEffect(() => {
     fetch("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=GzKTz5zfmdAAPS5iUHTtNA4Vr9FGl8bE")
-     .then(res => res.json())
+     .then(res => {
+      if (res.status === 200) {
+        return res.json();
+      } else {
+        setError("Oops, something went wrong. Please try again.");
+      }
+     })
      .then(data => {
       setData(data.results)
       console.log(data.results)

@@ -21,6 +21,7 @@ const App = () => {
      })
      .then(data => {
       setData(data.results)
+      console.log(data.results)
      })
   }, []);
 

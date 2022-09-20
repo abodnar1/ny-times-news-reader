@@ -1,0 +1,20 @@
+.article-wrapper {
+  color: black;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  overflow-x: hidden;
+  border: 2px solid black
+}
+
+.article-title,
+.article-section,
+.article-published {
+  color: black;
+  margin: 0;
+}
+
+.info-wrapper {
+  margin-left: 10px;
+}

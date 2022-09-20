@@ -11,7 +11,6 @@ const App = () => {
   const [category, setCategory] = useState("home")
   const [error, setError] = useState("");
 
-  // On page load, see Top News Stories
   useEffect(() => {
     fetch(`https://api.nytimes.com/svc/topstories/v2/${category}.json?api-key=GzKTz5zfmdAAPS5iUHTtNA4Vr9FGl8bE`)
      .then(res => {
@@ -31,7 +30,7 @@ const App = () => {
     <div className="App">
       <Header />
       <SearchForm setCategory={setCategory} />
-      {/* <ArticleDetails /> */}
+      <ArticleDetails />
       <Articles data={data}/>
       <Footer />
     </div>

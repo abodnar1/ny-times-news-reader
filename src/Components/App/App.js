@@ -31,7 +31,7 @@ const App = () => {
     <div className="App">
       <Header />
       <SearchForm setCategory={setCategory} />
-      <ArticleDetails />
+      {/* <ArticleDetails /> */}
       <Articles data={data}/>
       <Footer />
     </div>

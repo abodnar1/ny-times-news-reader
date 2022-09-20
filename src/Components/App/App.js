@@ -21,7 +21,6 @@ const App = () => {
      })
      .then(data => {
       setData(data.results)
-      console.log(data.results)
      })
   }, []);
 
@@ -29,7 +28,7 @@ const App = () => {
     <div className="App">
       <Header />
       <SearchForm />
-      <Articles />
+      <Articles data={data}/>
       <Footer />
     </div>
   );

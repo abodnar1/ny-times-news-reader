@@ -8,11 +8,12 @@ import ArticleDetails from "../ArticleDetails/ArticleDetails";
 
 const App = () => {
   const [data, setData] = useState([]);
+  const [category, setCategory] = useState("home")
   const [error, setError] = useState("");
 
   // On page load, see Top News Stories
   useEffect(() => {
-    fetch("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=GzKTz5zfmdAAPS5iUHTtNA4Vr9FGl8bE")
+    fetch(`https://api.nytimes.com/svc/topstories/v2/${category}.json?api-key=GzKTz5zfmdAAPS5iUHTtNA4Vr9FGl8bE`)
      .then(res => {
       if (res.status === 200) {
         return res.json();
@@ -24,12 +25,12 @@ const App = () => {
       setData(data.results)
       console.log(data.results)
      })
-  }, []);
+  }, [category]);
 
   return (
     <div className="App">
       <Header />
-      <SearchForm />
+      <SearchForm setCategory={setCategory} />
       <ArticleDetails />
       <Articles data={data}/>
       <Footer />

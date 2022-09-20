@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "../Header/Header";
 import SearchForm from "../SearchForm/SearchForm";
 import Articles from "../Articles/Articles";
+import Footer from "../Footer/Footer";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Header />
       <SearchForm />
       <Articles />
+      <Footer />
     </div>
   );
 };

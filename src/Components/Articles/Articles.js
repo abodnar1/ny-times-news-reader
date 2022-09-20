@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Articles.css";
 import Article from "../Article/Article";
 

@@ -1,0 +1,25 @@
+.footer-container {
+  text-align: center;
+	margin-top: 30px;
+	border-top: .5px solid black;
+  letter-spacing: .1rem;
+  height: 100%;
+	padding: 0px;
+  background-color:white;
+  opacity: .5;
+}
+
+.contributor,
+.name {
+  margin: 4px;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.creds {
+  margin: 0;
+	text-decoration: none;
+  text-align: center;
+  font-size: 10px;
+}

@@ -4,6 +4,7 @@ import Header from "../Header/Header";
 import SearchForm from "../SearchForm/SearchForm";
 import Articles from "../Articles/Articles";
 import Footer from "../Footer/Footer";
+import ArticleDetails from "../ArticleDetails/ArticleDetails";
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -21,6 +22,7 @@ const App = () => {
      })
      .then(data => {
       setData(data.results)
+      console.log(data.results)
      })
   }, []);
 
@@ -28,6 +30,7 @@ const App = () => {
     <div className="App">
       <Header />
       <SearchForm />
+      <ArticleDetails />
       <Articles data={data}/>
       <Footer />
     </div>

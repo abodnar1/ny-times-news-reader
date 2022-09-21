@@ -4,7 +4,7 @@ import "./Article.css";
 
 const Article = ({ id, section, title, published, image }) => {
   return (
-    <Link to={`/article/${id}`}>
+    <Link to={`/article/${id}`} className="link-to-details">
       <article className="article-wrapper">
         <img className="article-image" src={image} alt={section}/>
         <div className="info-wrapper">

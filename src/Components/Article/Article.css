@@ -24,3 +24,7 @@
 .info-wrapper {
   margin-left: 10px;
 }
+
+.link-to-details {
+  text-decoration: none;
+}

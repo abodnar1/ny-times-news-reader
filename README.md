@@ -39,12 +39,17 @@ The [Turing School of Software and Design](https://turing.edu/) provided a spec 
 ## Planning
 A Notion [document](https://picturesque-bandana-b81.notion.site/NY-Times-News-Reader-f84c4e09eb41404589604e5be5a097c4) was used to keep component architecture, wireframes, and inspirations all in one place. 
 
-### Wireframes
+#### *Wireframes*
 <img width="460" alt="articles-wireframe" src="https://user-images.githubusercontent.com/99693359/191517608-0657f3af-5603-4d8c-908a-aa16dedfe8cb.png">
 </br>
 </br>
 <img width="460" alt="article-detail-wireframe" src="https://user-images.githubusercontent.com/99693359/191517890-2805482a-d294-44c7-a4e6-50c855f16fcf.png">
 
+#### *User Stories*
+1. As a user, when I visit the app I should see a list of Top news titles.
+2. As a user, I should be able to click on a news title and get the details of that article.
+3. As a user, from the detailed page, I should be redirected to the NYT website when the article url is clicked.
+4. As a user, I should be able to choose a news section from the dropdown menu and see all the articles pertaining to that section.
 
 ## Accessibility
 Accessibility was audited using Lighthouse.

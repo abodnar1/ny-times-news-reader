@@ -2,6 +2,7 @@ import React from "react";
 import "./SearchForm.css";
 
 const SearchForm = ({ setCategory }) => {
+
   return (
     <form>
       <label className="form-label" htmlFor="category-select">Please choose a news section you'd like to see today's Top Stories for!</label>

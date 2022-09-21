@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 
 const Footer = () => {
+
   return (
     <footer className="footer-container">
       <h4 className="contributor">Created By: </h4>

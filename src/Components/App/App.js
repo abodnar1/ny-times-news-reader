@@ -8,6 +8,7 @@ import Footer from "../Footer/Footer";
 import ArticleDetails from "../ArticleDetails/ArticleDetails";
 
 const App = () => {
+  
   const [data, setData] = useState([]);
   const [category, setCategory] = useState("home");
   const [loading, setLoading] = useState(false);

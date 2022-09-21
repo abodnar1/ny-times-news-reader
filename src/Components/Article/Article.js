@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Article.css";
 
 const Article = ({ id, section, title, published, image }) => {
+  
   return (
     <Link to={`/article/${id}`} className="link-to-details">
       <article className="article-wrapper">

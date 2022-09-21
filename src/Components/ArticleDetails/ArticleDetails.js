@@ -1,7 +1,10 @@
 import React from "react";
 import "./ArticleDetails.css";
 
-const ArticleDetails = ({ title, byline, published_date, caption, multimedia, url }) => {
+const ArticleDetails = ({ title, byline, published_date, abstract, multimedia, url }) => {
+  
+  const largeImage = multimedia.find(image => image.format === "threeByTwoSmallAt2X");
+
   return (
     <main className="details-container">
       <section className="top-container">
@@ -9,10 +12,12 @@ const ArticleDetails = ({ title, byline, published_date, caption, multimedia, ur
         <h3 className="byline">{byline}</h3>
         <p className="published">Published on {published_date}</p>
       </section>
-      {/* <img className="jumbo-image" src={multimedia} alt="article full/> */}
-      <section>
-        <p className="caption">{caption}</p>
-        <a href={url}><p className="article-link">Read the full article here.</p></a>
+      <div className="large-image-container" >
+        <img className="large-image" src={largeImage.url} alt={title}/>
+      </div>
+      <section className="bottom-container">
+        <p className="abstract">{abstract}</p>
+        <a href={url}><p className="article-link">Read the full article here</p></a>
       </section>
     </main>
   );

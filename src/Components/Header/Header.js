@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 
 const Header = () => {
+
   const today = new Date();
   const hours = today.getHours();
   let greeting;
@@ -17,7 +18,7 @@ const Header = () => {
   return (
     <header className="header">
       <h1 className="site-title">NY Times News Reader</h1>
-      <p className="greeting">{`${greeting}`} Today is {`${today}`}</p>
+      <p className="greeting">{`${greeting}`} Today is {`${today.toString().slice(0, 16)}`}</p>
     </header>
   );
 };

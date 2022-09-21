@@ -3,6 +3,7 @@ import "./Articles.css";
 import Article from "../Article/Article";
 
 const Articles = ({ data }) => {
+  
   const articles = data.map(article => {
     return (
       <Article 

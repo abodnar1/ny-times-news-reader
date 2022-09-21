@@ -2,11 +2,12 @@ import React from "react";
 import "./SearchForm.css";
 
 const SearchForm = ({ setCategory }) => {
+
   return (
     <form>
-      <label htmlFor="category-select"></label>
+      <label className="form-label" htmlFor="category-select">Please choose a news section you'd like to see today's Top Stories for!</label>
       <select name="categories" id="category-select" onChange={(e) => setCategory(e.target.value)}>
-        <option value="">--Please choose a news category--</option>
+        <option value="">--choose a section--</option>
         <option value="arts">Arts</option>
         <option value="automobiles">Automobiles</option>
         <option value="books">Books</option>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Route } from "react-router-dom";
 import "./App.css";
 import Header from "../Header/Header";
 import SearchForm from "../SearchForm/SearchForm";
@@ -26,7 +27,6 @@ const App = () => {
      .then(data => {
       setData(data.results)
       setLoading(false)
-      // console.log(data.results)
      })
      .catch(error => {
       setError(error.message)
@@ -37,10 +37,18 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <SearchForm setCategory={setCategory} />
       {error && <p className="error-message">{error}</p>}
-      {!loading ? <Articles data={data}/> : <p className="loading">Loading...</p>}
-      {/* <ArticleDetails /> */}
+      <Route exact path="/">
+        <SearchForm setCategory={setCategory} />
+        {!loading ? <Articles data={data}/> : <p className="loading">Loading...</p>}
+      </Route>
+      <Route 
+        exact path="/article/:id" 
+        render={({ match }) =>  {
+          const articleToView = data.find(article => article.created_date === match.params.id)
+          return <ArticleDetails {...articleToView} />}
+        }>
+      </Route>
       <Footer />
     </div>
   );

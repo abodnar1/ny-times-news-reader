@@ -6,7 +6,7 @@ const Articles = ({ data }) => {
   const articles = data.map(article => {
     return (
       <Article 
-        id={article.uri}
+        id={article.created_date}
         key={article.uri}
         section={article.section}
         title={article.title}

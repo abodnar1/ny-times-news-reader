@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <header className="header">
       <h1 className="site-title">NY Times News Reader</h1>
-      <p className="greeting">{`${greeting}`} Today is {`${today}`}</p>
+      <p className="greeting">{`${greeting}`} Today is {`${today.toString().slice(0, 16)}`}</p>
     </header>
   );
 };

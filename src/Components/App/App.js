@@ -25,7 +25,8 @@ const App = () => {
         }
      })
      .then(data => {
-      setData(data.results)
+      const fetchedArticles = data.results.filter(article => article.item_type === "Article")
+      setData(fetchedArticles)
       setLoading(false)
      })
      .catch(error => {

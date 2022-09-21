@@ -5,7 +5,14 @@
   align-items: center;
   margin-top: 30px;
   overflow-x: hidden;
-  border: 2px solid black
+  border: 2px solid black;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.article-wrapper:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 5px 5px grey;
 }
 
 .article-title,

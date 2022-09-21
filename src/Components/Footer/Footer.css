@@ -5,19 +5,19 @@
   letter-spacing: .1rem;
   height: 100%;
 	padding: 0px;
-  background-color:white;
-  opacity: .5;
+  color: white;
+  background-color: #780116;
 }
 
 .contributor,
 .name {
   margin: 4px;
-  color: black;
   font-size: 10px;
   font-weight: bold;
 }
 
 .creds {
+  color: white;
   margin: 0;
 	text-decoration: none;
   text-align: center;

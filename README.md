@@ -13,10 +13,13 @@
 ## Summary
 The NY Times News Reader application was built for a take-home challenge where articles were fetched from the [New York Times Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview). The application was built in about 8 hours and achieves 100% accessibility.
 
-[VISUALS GO HERE]
-![](name-of-giphy.gif)
+</br>
 
-The [Turing School of Software and Design](https://turing.edu/) provided a spec sheet for students to follow, which can be found [here](https://mod4.turing.edu/projects/take_home/take_home_fe).
+![visual-gif](https://media.giphy.com/media/i34iF2Dq6sdYPvsIQq/giphy.gif)
+
+</br>
+
+The [Turing School of Software and Design](https://turing.edu/) provided a spec sheet, which can be found [here](https://mod4.turing.edu/projects/take_home/take_home_fe).
 
 
 ## Technologies and Tools
@@ -37,10 +40,10 @@ The [Turing School of Software and Design](https://turing.edu/) provided a spec 
 A Notion [document](https://picturesque-bandana-b81.notion.site/NY-Times-News-Reader-f84c4e09eb41404589604e5be5a097c4) was used to keep component architecture, wireframes, and inspirations all in one place. 
 
 ### Wireframes
-<img width="600" alt="articles-wireframe" src="https://user-images.githubusercontent.com/99693359/191517608-0657f3af-5603-4d8c-908a-aa16dedfe8cb.png">
+<img width="460" alt="articles-wireframe" src="https://user-images.githubusercontent.com/99693359/191517608-0657f3af-5603-4d8c-908a-aa16dedfe8cb.png">
 </br>
 </br>
-<img width="600" alt="article-detail-wireframe" src="https://user-images.githubusercontent.com/99693359/191517890-2805482a-d294-44c7-a4e6-50c855f16fcf.png">
+<img width="460" alt="article-detail-wireframe" src="https://user-images.githubusercontent.com/99693359/191517890-2805482a-d294-44c7-a4e6-50c855f16fcf.png">
 
 
 ## Accessibility
@@ -55,6 +58,7 @@ Accessibility was audited using Lighthouse.
 3. `cd` into the root of the project directory
 4. Run `npm install`
 5. Run `npm start`
+6. Open `http://localhost:3000/` in your browser to view
 
 
 ## Roadmap

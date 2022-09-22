@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ArticleDetails.css";
 
 const ArticleDetails = ({ title, byline, published_date, abstract, multimedia, url }) => {
@@ -7,6 +8,12 @@ const ArticleDetails = ({ title, byline, published_date, abstract, multimedia, u
 
   return (
     <main className="details-container">
+      <Link to="/" className="back-link">
+        <div className="back-button-container">
+          <span className="material-symbols-rounded">arrow_back</span>
+          <p className="back">Back Home</p>
+        </div>
+      </Link>
       <section className="top-container">
         <h2 className="title">{title}</h2>
         <h3 className="byline">{byline}</h3>

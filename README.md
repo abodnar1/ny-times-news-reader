@@ -1,4 +1,4 @@
-# NY Times News Reader
+# [NY Times News Reader](https://ny-times-news-reader.herokuapp.com/)
 
 ## Table of Contents
 - [Summary](#summary)

@@ -9,7 +9,7 @@ import ArticleDetails from "../ArticleDetails/ArticleDetails";
 
 const App = () => {
   
-  const [data, setData] = useState([]);
+  const [articles, setArticles] = useState([]);
   const [category, setCategory] = useState("home");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -27,7 +27,7 @@ const App = () => {
      })
      .then(data => {
       const fetchedArticles = data.results.filter(article => article.item_type === "Article")
-      setData(fetchedArticles)
+      setArticles(fetchedArticles)
       setLoading(false)
      })
      .catch(error => {
@@ -42,12 +42,12 @@ const App = () => {
       {error && <p className="error-message">{error}</p>}
       <Route exact path="/">
         <SearchForm setCategory={setCategory} />
-        {!loading ? <Articles data={data}/> : <p className="loading">Loading...</p>}
+        {!loading ? <Articles articles={articles}/> : <p className="loading">Loading...</p>}
       </Route>
       <Route 
         exact path="/article/:id" 
         render={({ match }) =>  {
-          const articleToView = data.find(article => article.created_date === match.params.id)
+          const articleToView = articles.find(article => article.created_date === match.params.id)
           return <ArticleDetails {...articleToView} />}
         }>
       </Route>

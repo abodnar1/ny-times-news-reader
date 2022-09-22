@@ -3,7 +3,7 @@ import "./ArticleDetails.css";
 
 const ArticleDetails = ({ title, byline, published_date, abstract, multimedia, url }) => {
   
-  const largeImage = multimedia.find(image => image.format === "threeByTwoSmallAt2X");
+  const largeImage = multimedia ? multimedia.find(image => image.format === "threeByTwoSmallAt2X").url : null;
 
   return (
     <main className="details-container">
@@ -13,7 +13,7 @@ const ArticleDetails = ({ title, byline, published_date, abstract, multimedia, u
         <p className="published">Published on {published_date}</p>
       </section>
       <div className="large-image-container" >
-        <img className="large-image" src={largeImage.url} alt={title}/>
+        <img className="large-image" src={largeImage} alt={title}/>
       </div>
       <section className="bottom-container">
         <p className="abstract">{abstract}</p>

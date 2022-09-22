@@ -2,9 +2,10 @@ import React from "react";
 import "./Articles.css";
 import Article from "../Article/Article";
 
-const Articles = ({ data }) => {
+const Articles = ({ articles }) => {
   
-  const articles = data.map(article => {
+  const mappedArticles = articles.map(article => {
+    let thumbnailImage = article.multimedia ? article.multimedia.find(image => image.format === "Large Thumbnail").url : null;
     return (
       <Article 
         id={article.created_date}
@@ -12,14 +13,14 @@ const Articles = ({ data }) => {
         section={article.section}
         title={article.title}
         published={article.published_date}
-        image={article.multimedia[2].url}
+        image={thumbnailImage}
       />
     );
   });
 
   return (
     <main className="article-container">
-      { articles }
+      { mappedArticles }
     </main>
   );
 };

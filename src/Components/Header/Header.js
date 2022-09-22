@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -17,7 +18,9 @@ const Header = () => {
 
   return (
     <header className="header">
-      <h1 className="site-title">NY Times News Reader</h1>
+      <Link to="/" className="home-link">
+        <h1 className="site-title">NY Times News Reader</h1>
+      </Link>
       <p className="greeting">{`${greeting}`} Today is {`${today.toString().slice(0, 16)}`}</p>
     </header>
   );

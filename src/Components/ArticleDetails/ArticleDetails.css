@@ -38,3 +38,11 @@
 .back-link {
   text-decoration: none;
 }
+
+@media only screen and (max-width: 800px) {
+  .top-container,
+  .large-image-container,
+  .bottom-container {
+    width: min 100vw;
+  }
+}

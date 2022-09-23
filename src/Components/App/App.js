@@ -17,7 +17,7 @@ const App = () => {
   useEffect(() => {
     setLoading(true);
     
-    fetch(`https://api.nytimes.com/svc/topstories/v2/${category}.json?api-key=GzKTz5zfmdAAPS5iUHTtNA4Vr9FGl8bE`)
+    fetch(`https://api.nytimes.com/svc/topstories/v2/${category}.json?api-key=${process.env.REACT_APP_API_KEY}`)
      .then(res => {
         if (res.status === 200) {
           return res.json();

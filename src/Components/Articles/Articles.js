@@ -1,25 +1,29 @@
 import React from "react";
 import "./Articles.css";
 import Article from "../Article/Article";
+import unavailableImage from "../../assets/unavilable.png";
 
-const Articles = ({ data }) => {
+const Articles = ({ articles }) => {
   
-  const articles = data.map(article => {
+  const mappedArticles = articles.map(article => {
+    let thumbnailImage = article.multimedia ? article.multimedia.find(image => image.format === "Large Thumbnail").url : unavailableImage;
+    let publishedDateReformatted = new Date(article.published_date).toString().slice(0, 16);
+
     return (
       <Article 
         id={article.created_date}
         key={article.uri}
         section={article.section}
         title={article.title}
-        published={article.published_date}
-        image={article.multimedia[2].url}
+        published={publishedDateReformatted}
+        image={thumbnailImage}
       />
     );
   });
 
   return (
     <main className="article-container">
-      { articles }
+      { mappedArticles }
     </main>
   );
 };

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Article.css";
 
 const Article = ({ id, section, title, published, image }) => {
-  
+
   return (
     <Link to={`/article/${id}`} className="link-to-details">
       <article className="article-wrapper">
@@ -11,7 +11,7 @@ const Article = ({ id, section, title, published, image }) => {
         <div className="info-wrapper">
           <h2 className="article-title">{title}</h2>
           <h3 className="article-section">Section: {section}</h3>
-          <p className="article-published">Published: {published}</p>
+          <p className="article-published">Published on {published}</p>
         </div>
       </article>
     </Link>

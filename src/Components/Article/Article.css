@@ -21,6 +21,10 @@
   margin: 3px;
 }
 
+.article-image {
+  width: 108px;
+}
+
 .info-wrapper {
   margin-left: 10px;
 }
@@ -30,21 +34,13 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .article-wrapper {
-    height: 25vh;
-  }
-}
-
-@media only screen and (max-width: 600px) {
   .article-title,
   .article-section,
   .article-published {
-    margin: 3px;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .article-image {
-    width: 80px;
-    height: 80px;
+    width: 120px;
   }
 }

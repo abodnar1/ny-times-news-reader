@@ -20,8 +20,7 @@
 }
 
 .large-image {
-  width: inherit;
-  height: inherit;
+  width: fit-content;
 }
 
 .bottom-container {

@@ -34,12 +34,6 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .article-wrapper {
-    height: 25vh;
-  }
-}
-
-@media only screen and (max-width: 600px) {
   .article-title,
   .article-section,
   .article-published {

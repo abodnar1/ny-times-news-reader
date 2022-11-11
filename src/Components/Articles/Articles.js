@@ -7,13 +7,15 @@ const Articles = ({ articles }) => {
   
   const mappedArticles = articles.map(article => {
     let thumbnailImage = article.multimedia ? article.multimedia.find(image => image.format === "Large Thumbnail").url : unavailableImage;
+    let publishedDateReformatted = new Date(article.published_date).toString().slice(0, 16);
+
     return (
       <Article 
         id={article.created_date}
         key={article.uri}
         section={article.section}
         title={article.title}
-        published={article.published_date}
+        published={publishedDateReformatted}
         image={thumbnailImage}
       />
     );

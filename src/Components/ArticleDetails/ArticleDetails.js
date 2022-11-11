@@ -6,6 +6,7 @@ import unavailableImage from "../../assets/unavilable.png";
 const ArticleDetails = ({ title, byline, published_date, abstract, multimedia, url }) => {
   
   const largeImage = multimedia ? multimedia.find(image => image.format === "threeByTwoSmallAt2X").url : unavailableImage;
+  let publishedDateReformatted = new Date(published_date).toString().slice(0, 16);
 
   return (
     <main className="details-container">
@@ -18,7 +19,7 @@ const ArticleDetails = ({ title, byline, published_date, abstract, multimedia, u
       <section className="top-container">
         <h2 className="title">{title}</h2>
         <h3 className="byline">{byline}</h3>
-        <p className="published">Published on {published_date}</p>
+        <p className="published">Published on {publishedDateReformatted}</p>
       </section>
       <div className="large-image-container" >
         <img className="large-image" src={largeImage} alt={title}/>

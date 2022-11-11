@@ -28,3 +28,13 @@
 .home-link {
   text-decoration: none;
 }
+
+@media only screen and (max-width: 800px) {
+  .site-title {
+    font-size: 36px;
+  }
+
+  .greeting {
+    font-size: 14px;
+  }
+}

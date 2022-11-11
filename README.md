@@ -29,7 +29,6 @@ The NY Times News Reader application was built for a take-home challenge where a
 5. Run `npm start`
 6. Open `http://localhost:3000/` in your browser to view
 7. Run `ctrl` + `c` to stop at any time.
-8. To view additions made after the 8 hour time limit, run `git checkout feature/after-time-additions`.
 
 
 ## Planning

@@ -21,6 +21,10 @@
   margin: 3px;
 }
 
+.article-image {
+  width: 108px;
+}
+
 .info-wrapper {
   margin-left: 10px;
 }

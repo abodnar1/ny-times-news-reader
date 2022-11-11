@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./ArticleDetails.css";
+import unavailableImage from "../../assets/unavilable.png";
 
 const ArticleDetails = ({ title, byline, published_date, abstract, multimedia, url }) => {
   
-  const largeImage = multimedia ? multimedia.find(image => image.format === "threeByTwoSmallAt2X").url : null;
+  const largeImage = multimedia ? multimedia.find(image => image.format === "threeByTwoSmallAt2X").url : unavailableImage;
 
   return (
     <main className="details-container">

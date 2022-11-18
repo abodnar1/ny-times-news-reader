@@ -1,0 +1,65 @@
+[
+  {
+    "section": "sports",
+    "subsection": "soccer",
+    "title": "Ban on Beer Is Latest Flash Point in World Cup Culture Clash",
+    "abstract": "Qatar’s about-face on alcohol signaled that FIFA, soccer’s governing body, may no longer be in full control of its showcase championship.",
+    "url": "https://www.nytimes.com/2022/11/18/sports/soccer/world-cup-beer-qatar.html",
+    "uri": "nyt://article/8bea560c-aa79-5c2a-bd60-7c0a331bc55d",
+    "byline": "By Tariq Panja",
+    "item_type": "Article",
+    "updated_date": "2022-11-18T12:44:37-05:00",
+    "created_date": "2022-11-18T04:37:46-05:00",
+    "published_date": "2022-11-18T04:37:46-05:00",
+    "material_type_facet": "",
+    "kicker": "",
+    "des_facet": [
+        "Soccer",
+        "World Cup 2022 (Soccer)",
+        "Beer",
+        "Alcoholic Beverages",
+        "Stadiums and Arenas"
+    ],
+    "org_facet": [
+        "International Federation of Association Football (FIFA)",
+        "Anheuser-Busch InBev NV"
+    ],
+    "per_facet": [],
+    "geo_facet": [
+        "Qatar"
+    ],
+    "multimedia": [
+        {
+            "url": "https://static01.nyt.com/images/2022/11/18/multimedia/18worldcup-beer-1-0e28/18worldcup-beer-1-0e28-superJumbo.jpg",
+            "format": "Super Jumbo",
+            "height": 1366,
+            "width": 2048,
+            "type": "image",
+            "subtype": "photo",
+            "caption": "Qatar’s ban on beer in stadiums complicated FIFA’s relationship with Budweiser, which pays $75 million every four years to be associated with the World Cup.",
+            "copyright": "Patrick T. Fallon/Agence France-Presse — Getty Images"
+        },
+        {
+            "url": "https://static01.nyt.com/images/2022/11/18/multimedia/18worldcup-beer-1-0e28/18worldcup-beer-1-0e28-threeByTwoSmallAt2X.jpg",
+            "format": "threeByTwoSmallAt2X",
+            "height": 400,
+            "width": 600,
+            "type": "image",
+            "subtype": "photo",
+            "caption": "Qatar’s ban on beer in stadiums complicated FIFA’s relationship with Budweiser, which pays $75 million every four years to be associated with the World Cup.",
+            "copyright": "Patrick T. Fallon/Agence France-Presse — Getty Images"
+        },
+        {
+            "url": "https://static01.nyt.com/images/2022/11/18/multimedia/18worldcup-beer-1-0e28/18worldcup-beer-1-0e28-thumbLarge.jpg",
+            "format": "Large Thumbnail",
+            "height": 150,
+            "width": 150,
+            "type": "image",
+            "subtype": "photo",
+            "caption": "Qatar’s ban on beer in stadiums complicated FIFA’s relationship with Budweiser, which pays $75 million every four years to be associated with the World Cup.",
+            "copyright": "Patrick T. Fallon/Agence France-Presse — Getty Images"
+        }
+    ],
+    "short_url": "https://nyti.ms/3THqlSk"
+  }
+]

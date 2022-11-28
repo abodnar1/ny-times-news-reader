@@ -1,5 +1,5 @@
 # NY Times News Reader
-Visit the deployed site [here](https://ny-times-news-reader.herokuapp.com/).
+Visit the deployed site [here](https://ny-times-news-reader.vercel.app/).
 
 ## Table of Contents
 - [Summary](#summary)

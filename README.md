@@ -14,11 +14,13 @@ Visit the deployed site [here](https://ny-times-news-reader.vercel.app/).
 ## Summary
 The NY Times News Reader application was built for a take-home challenge where articles were fetched from the [New York Times Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview). The application was built in about 8 hours and achieves 100% accessibility.
 
+*Desktop View*
 </br>
+![visual-gif](https://media.giphy.com/media/9FMuYC0vWqKweAd639/giphy.gif)
 
-![visual-gif](https://media.giphy.com/media/i34iF2Dq6sdYPvsIQq/giphy.gif)
-
+*Mobile View*
 </br>
+![mobile-gif](https://media.giphy.com/media/vr1hueo6T6vQFxuVFM/giphy.gif)
 
 
 ## Setup
